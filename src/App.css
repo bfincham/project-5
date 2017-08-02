@@ -1,3 +1,5 @@
+
+
 .navigation {
   background: url(images/Swim.jpg) 100% no-repeat;
   background-size: cover;
@@ -7,46 +9,9 @@
   height: 750px;
   flex-direction:column;
   text-align:center;
-
-}
-
-#header h1{
-  font-size: 30px;
-  font-color: black;
-  font-weight: 400;
-  font-family: 'Quicksand' , sans-serif;
-  text-align: center;
-  font-weight: bold;
-}
-
-#header h2{
-  font-color: black;
-  font-weight: 400;
-  font-family: 'Quicksand' , sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-
-h3 {
-  text-align: left;
-  color: orange;
   position: relative;
-  top: -150px;
-}
 
-h4 {
-  text-align: left;
-  color: crimson;
-  position: relative;
-  top: -160px;
-  left: 50px;
 }
-.navigation ul{
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-}
-
 
 .navigation ul {
   height:100px;
@@ -61,7 +26,6 @@ h4 {
   letter-spacing: 2px;
 
 
-
 }
 .navigation li a {
   color: white;
@@ -71,45 +35,93 @@ h4 {
   display: inline-block;
 
 }
-#welcome p {
-  margin-right: 20%;
-  margin-left: 15%;
-  align-content: center;
-  position: relative;
-  top: -300px;
-
-
-}
-#welcome h2 {
+.title {
+  font-size: 30px;
   font-color: black;
   font-weight: 400;
   font-family: 'Quicksand' , sans-serif;
-  font-weight: bold;
   text-align: center;
-  margin-right: 20%;
-  margin-left: 15%;
-  position: relative;
-  top: -350px;
+  justify-content: center;
+  align-content: center;
 
 }
+
+.subtitle {
+  color: red;
+}
+
+.navigation h4 {
+  color: orange;
+  position: relative;
+  top: -20px;
+}
+header{
+  text-align:center;
+  padding: 2rem;
+  font-size: 30px;
+ 
+}
+.footer {
+  color: turquoise;
+}
+
+.footer h3 {
+  color: turquoise;
+}
+
+input {
+  width: 750px;
+  line-height: 30px;
+}
+
+.Block {
+  float: right;
+  position: relative;
+  right: 180px;
+}
+
+#welcome p {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+#youtube {
+  padding-top: 20px;
+  align-items: center;
+  position: relative;
+  right: -250px;
+}
+
 
 
 #sidebar {
   float: right;
-  width:400px;
+  width: 400px;
   margin: 0 0 10px 10px;
+
+}
+
+
+
+
+#logo {
+
+  content: url(images/batc-logo.jpeg);
+  height: 340px;
+  width:360px;
+  position: relative;
 
 
 
 }
 
-#logo {
-  content: url(images/batc-logo.jpeg);
-  height: 180px;
-  width: 200px;
-  padding-top: 30%;
+#group {
+  content: url(images/group.jpg);
+  height: 225px;
+  width:300px;
   position: relative;
-  top: -100px;
+
+
 }
 
 #image {
@@ -117,24 +129,15 @@ h4 {
   height: 340px;
   width:360px;
   position: relative;
-  top: -200px;
-}
-#group {
-  content: url(images/batc_group.jpg);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin-top: 30%;
-  width: 1500px;
-  position: relative;
-  top: -400px;
-
 
 }
 
-#president {
+
+.president {
   content: url("images/president_batc.jpg");
+}
+#president {
+
   display: inline-block;
   padding: 1em;
   text-align: center;
@@ -174,23 +177,7 @@ h4 {
 .history  {
   float: left;
 }
-#ironman {
-  background: url(images/ironmanstory3.jpg) 100% no-repeat;
-  flex-grow:1;
-  align-items: center;
-  justify-content: center;
-  height: 220px;
-  width: 1220px;
-  flex-direction:column;
-  text-align:center;
-  margin-top: 30%;
-  width: 1500px;
-  position: relative;
-  top: -450px;
 
-
-
-}
 #ironman h1 {
   font-size: 30px;
   color: white;
@@ -208,13 +195,21 @@ h4 {
   margin-left: 15%;
   margin-right: 15%;
   position: relative;
-  top: 1000px;
+  top: 1100px;
 
 }
 
+
 .history h2 {
   position: relative;
-  top: 950px;
+  top: 1050px;
+  background: url(/images/ironmanstory3.jpg) 100% no-repeat ;
+}
+
+.box {
+ background-color:lightblue;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #finish {
@@ -229,17 +224,19 @@ h4 {
 .staff-image {
   max-width: 200px;
   max-height: 150px;
+
 }
 .staff-card {
   display: inline-block;
-  border: 5px solid black;
-  padding: 1em;
+
+  padding: 10px;
   text-align: center;
+  justify-content: center;
 
 }
 .bio {
   position: relative;
-  top: 250px;
+  top: -450px;
 }
 .events-card ul {
   background-color: white;
@@ -251,15 +248,24 @@ h4 {
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  align-content: center;
+  position: relative;
+  right: -930px;
+
 
 
 }
 
 .events {
   position: relative;
-  top: 400px;
+  top:-150px;
 
 
 }
 
+
+#footer {
+  position: relative;
+  top: 2000px;
+}
 

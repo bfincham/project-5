@@ -1,5 +1,4 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
 
 const EventData = [
     {
@@ -22,7 +21,8 @@ const EventData = [
 function EventList(props){
     return (
         <div className="events-card">
-            <h2>{props.name}</h2>
+
+            <h3 className="title is-3">{props.name}</h3>
             <ul>
                 <li><strong>Name:</strong> {props.name}</li>
                 <li><strong>Date:</strong> {props.date}</li>

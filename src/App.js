@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 import Request from 'superagent';
+import 'bulma/css/bulma.css';
 import './App.css';
 import Home from './Home';
 import About from './About';
 import Events from './Events';
 import {TemperatureConverter} from 'cis137-components';
+
 
 
 
@@ -42,28 +44,65 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div className="navigation">
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/events">Events</Link></li>
-                    </ul>
-                    <div id="header">
 
-                        <h1>Baltimore Area Triathlon Club Inc.</h1>
-                        <h2>Swim | Bike | Run | Fun </h2>
-                        <h3>Current Temperature</h3>
-                        <h4>
-                            <TemperatureConverter kelvin={this.state.temp} toUnit="F"/>
-                        </h4>
+                <section className="hero">
+                    <div className="hero-head">
+                        <div className="nav-right nav-menu">
+
+                            <div className="navigation">
+                                <ul>
+                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/about">About</Link></li>
+                                    <li><Link to="/events">Events</Link></li>
+                                </ul>
 
 
+
+                                    <h1 className="title"><strong>Baltimore Area Triathlon Club Inc.</strong>
+                                    </h1>
+                                <h3 className="subtitle">Current Temperature</h3>
+                                <h4>
+                                    <strong><TemperatureConverter kelvin={this.state.temp} toUnit="F"/></strong>
+                                </h4>
+                                </div>
+                        </div>
+
+                            </div>
+                    <div id="footer">
+                    <footer className="hero is-primary">
+                        <div className="container">
+                            <div className="content has-text-centered">
+                                <div className="footer">
+                                    <h3>
+                                        BATC<strong> Newsletter</strong>
+                                    </h3>
+                                    <form action="/action_page.php">
+                                        <strong>E-mail:</strong>
+                                        <input type="email" name="email" />
+                                        <div className="Block">
+                                            <a className="button is-primary is-outlined">Subscribe</a>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </footer>
                     </div>
-                    <Route path="/" exact component={Home}/>
-                    <Route path="/about" exact component={About}/>
-                    <Route path="/events" exact component={Events}/>
 
-                </div>
+
+                        <Route path="/" exact component={Home}/>
+                        <Route path="/about" exact component={About}/>
+                        <Route path="/events" exact component={Events}/>
+
+
+
+
+                </section>
+
+
+
 
             </BrowserRouter>
 
