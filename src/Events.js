@@ -21,9 +21,9 @@ const EventData = [
 function EventList(props){
     return (
         <div className="events-card">
-
-            <h3 className="title is-3">{props.name}</h3>
             <ul>
+            <h3 className="title is-3">{props.name}</h3>
+
                 <li><strong>Name:</strong> {props.name}</li>
                 <li><strong>Date:</strong> {props.date}</li>
                 <li><strong>Description:</strong> {props.description}</li>

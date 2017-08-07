@@ -7,9 +7,10 @@ import treasurer from './images/tresurer_batc.jpg';
 
 function HistoryText(){
     return (
+        <div classname="colomn is-mobile">
 
 
-        <div className="history">
+        <div className="history is-mobile">
             <h2 className=" title is-2"><strong>Our Story</strong></h2>
             <p>In 1997 friends John Doe and Bill Harry competed in their first Triathlon.
                 afer a few years in the sport they dcided to form a group with others in the Baltimore
@@ -30,6 +31,7 @@ function HistoryText(){
                 urna vitae orci bibendum pretium. Proin nec felis interdum, tempus dolor ut, ullamcorper metus.
                 Donec tempor nisi sed nisi tincidunt consectetur. Pellentesque in viverra ligula. Nulla quis metus
                 ut justo suscipit hendrerit. In hac habitasse platea dictumst. Sed vitae ullamcorper libero.</p>
+        </div>
         </div>
 
 
@@ -82,7 +84,7 @@ function StaffBios(){
                     </div>
                 </article>
                 </div>
-                <div className="box">
+                <div className="box is-mobile">
                     <article className="media">
                         <div className="media-left">
 

@@ -84,6 +84,7 @@ input {
   text-align: center;
   justify-content: center;
   align-content: center;
+  position: relative;
 }
 #youtube {
   padding-top: 20px;
@@ -98,6 +99,7 @@ input {
   float: right;
   width: 400px;
   margin: 0 0 10px 10px;
+  position: relative;
 
 }
 
@@ -165,6 +167,7 @@ input {
   font-weight: bold;
   text-align: center;
   padding-top: 30%;
+  position: relative;
 }
 .about h3 {
   color: black;
@@ -172,6 +175,7 @@ input {
   font-family: 'Quicksand' , sans-serif;
   font-weight: bold;
   text-align: center;
+  position: relative;
 }
 
 .history  {
@@ -195,14 +199,14 @@ input {
   margin-left: 15%;
   margin-right: 15%;
   position: relative;
-  top: 1100px;
+  top: 1300px;
 
 }
 
 
 .history h2 {
   position: relative;
-  top: 1050px;
+  top: 1250px;
   background: url(/images/ironmanstory3.jpg) 100% no-repeat ;
 }
 
@@ -216,7 +220,7 @@ input {
   content: url(images/finish.jpg);
   float: right;
   position: relative;
-  top: -400px;
+  top: 300px;
   width: 700px;
   height: 500px;
 }
@@ -228,7 +232,6 @@ input {
 }
 .staff-card {
   display: inline-block;
-
   padding: 10px;
   text-align: center;
   justify-content: center;
@@ -238,8 +241,9 @@ input {
   position: relative;
   top: -450px;
 }
+
 .events-card ul {
-  background-color: white;
+  background-color: firebrick;
   text-align: center;
   border: 1px solid black;
   margin: .5em;
@@ -249,23 +253,11 @@ input {
   padding-top: 5px;
   padding-bottom: 5px;
   align-content: center;
-  position: relative;
-  right: -930px;
-
-
 
 }
-
-.events {
-  position: relative;
-  top:-150px;
-
-
-}
-
 
 #footer {
   position: relative;
-  top: 2000px;
+  top: 2600px;
 }
 

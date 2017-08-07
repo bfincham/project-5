@@ -15,12 +15,14 @@ export default function Home() {
                 <h2 classname="title is-2"> <strong> Welcome to BATC</strong></h2>
 
             </header>
-            <div className="columns">
+            <div className="columns is-mobile">
                 <div className="column is-3">
+                    <div className="column is-3 is-mobile">
                     <div id="logo">
                     </div>
+                    </div>
                 </div>
-                <div className="column">
+                <div className="column is-mobile">
                     <div id="welcome">
 
                     <p className="notification is-dark">
@@ -73,7 +75,7 @@ export default function Home() {
                     </div>
 
                 </div>
-                <div className="column is-3">
+                <div className="column is-3 is-mobile">
                     <div id="sidebar">
                     <p>
                         <strong>Hours of Operation</strong><br/><br/>
@@ -85,10 +87,11 @@ export default function Home() {
                         <strong>Dues</strong><br/><br/>
                         $35.00 - Annually
                     </p>
-                    </div>
+
                     <div id="image">
                     </div>
                     <div id="group">
+                    </div>
                     </div>
 
 

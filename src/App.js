@@ -7,10 +7,17 @@ import Home from './Home';
 import About from './About';
 import Events from './Events';
 import {TemperatureConverter} from 'cis137-components';
+import ReactGA from 'react-ga';
 
-
-
-
+ReactGA.initialize('UA-104227822-1');
+/**
+ * @return {null}
+ */
+function Analytics(props){
+    ReactGA.set({ page: props.location.pathname + props.location.search });
+    ReactGA.pageview(props.location.pathname + props.location.search);
+    return null;
+}
 
 
 
@@ -45,9 +52,13 @@ class App extends Component {
         return (
             <BrowserRouter>
 
+
+
                 <section className="hero">
+                    <Route path="/" component={Analytics}/>
+                    ...
                     <div className="hero-head">
-                        <div className="nav-right nav-menu">
+
 
                             <div className="navigation">
                                 <ul>
@@ -65,7 +76,7 @@ class App extends Component {
                                     <strong><TemperatureConverter kelvin={this.state.temp} toUnit="F"/></strong>
                                 </h4>
                                 </div>
-                        </div>
+
 
                             </div>
                     <div id="footer">
@@ -99,7 +110,10 @@ class App extends Component {
 
 
 
+
+
                 </section>
+
 
 
 
